@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f9f9f9; color:#222; margin:40px; }
+    h1 { text-align:center; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; margin-top:30px; }
+    .card { background:#fff; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); padding:20px; }
+    .card img { width:100%; border-radius:10px; }
+    .card h2 { margin:10px 0 5px; }
+    .card p { font-size:14px; color:#444; }
+    .tags { color:#666; font-size:13px; margin-top:5px; }
+    .btn { display:inline-block; margin-top:10px; background:#0078ff; color:#fff; padding:8px 12px; border-radius:6px; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <h1>Francesco Battisti</h1>
+  <div class="grid">
+    <div class="card">
+      <img src="password-manager.png" alt="Password Manager">
+      <h2>AutoPass</h2>
+      <p>Cross-platform password manager.</p>
+      <div class="tags">Python · Keyring · Kivy · AES</div>
+      <a class="btn" href="https://github.com/AutoRobotix/AutoPass">Codice</a>
+    </div>
+
+    <div class="card">
+      <img src="nodenet.png" alt="NodeNet MVP">
+      <h2>NodeNet MVP</h2>
+      <p>Prototipo di rete decentralizzata senza blockchain.</p>
+      <div class="tags">Python · AsyncIO · Networking</div>
+      <a class="btn" href="https://github.com/tuouser/nodenet">Codice</a>
+    </div>
+  </div>
+</body>
+</html>
